@@ -1,0 +1,58 @@
+html[lang="ar"],
+html[lang="fa"],
+html[lang="ps"],
+html[lang="ur"] {
+	.entrepreneur_quiz__form .entrepreneur_quiz__btn--next {
+		float: left;
+	}
+	.share__overlay .share__overlay-close {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		right: auto;
+	}
+}
+
+html[lang="rw"],
+html[lang="pt-BR"],
+html[lang="ru"],
+html[lang="tr"],
+html[lang="fr"],
+html[lang="uk"],
+html[lang="ur"] {
+	.entrepreneur_quiz__restart_btn--container, .tempShareToolsHolder {
+		max-width: 250px;
+	}
+}
+
+html[lang="ar"], html[lang="fa"] {
+	.entrepreneur_quiz__restart_btn {
+		margin-top: -30px;
+	}
+
+	.tempShareToolsHolder p {
+		margin: 5px auto;
+	}
+
+	.share__button p {
+		padding: 0;
+	}
+
+	.share__overlay {
+		position: absolute;
+		bottom: 32px;
+		margin: 4px auto;
+		padding: 0;
+		font-size: 18px;
+
+		a {
+			padding: 5px 12px;
+		}
+	}
+}
+
+html[lang="ps"], html[lang="fa"] {
+	.entrepreneur_quiz .entrepreneur_quiz__start_btn {
+		padding: 0 2px;
+	}
+}

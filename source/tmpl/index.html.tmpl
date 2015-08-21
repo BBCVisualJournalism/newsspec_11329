@@ -1,0 +1,13 @@
+<%= include('includes/top.tmpl') %>
+<div id="entrepreneur_quiz" class="main entrepreneur_quiz">
+    <noscript>
+        You must have javascript enabled for this Quiz to show!
+    </noscript>
+    <div id="entrepreneur_quiz__start" class="entrepreneur_quiz__start">
+    	<img class="entrepreneur_quiz__img--start" src="<%= pathStatic %>/<%= vocab_dir %>/img/976/opener/bizquiz_opening_screen_976_v2.jpg"/>
+		<div class="entrepreneur_quiz__start_btn--container"><div id="entrepreneur_quiz__start_btn" class="entrepreneur_quiz__start_btn"><%= START_QUIZ %></div></div>
+	</div>
+    <%= include('app/questions.tmpl') %>
+    <%= include('app/results.tmpl') %>
+</div>
+<%= include('includes/bottom.tmpl') %>

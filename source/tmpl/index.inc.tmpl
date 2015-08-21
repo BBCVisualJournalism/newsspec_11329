@@ -1,0 +1,7 @@
+<%
+    iframeUid = "responsive-iframe-" + Math.floor(Math.random() * 100000000);
+%>
+<div class="newsspec__iframe_holder">
+    <a href="<%= path %>/<%= vocab_dir %>/index.html?v=<%= version %>" id="<%= iframeUid %>" data-static-iframe-height="600">Entrepreneur Quiz</a>
+</div>
+<script type="text/javascript"><%= include(debug ? "../js/lib/news_special/iframemanager__host.js" : "../js/lib/news_special/iframemanager__host.min.js", {iframeUid: iframeUid, scaffoldLite: scaffoldLite}) %></script>

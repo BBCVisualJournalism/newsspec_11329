@@ -1,0 +1,154 @@
+/* separate your sass into different files to keep it maintainable!  */
+.entrepreneur_quiz {
+	color: #222;
+	img {
+	    width: 100%;
+	}
+
+	p, h2, h3, label, .entrepreneur_quiz__position--wrapper, .entrepreneur_quiz__result--btns {
+		width: 100%;
+		max-width: 624px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.entrepreneur_quiz__start {
+		position: relative;
+	}
+
+	.entrepreneur_quiz__start_btn--container {
+		text-align: center;
+		margin: auto;
+		position: absolute;
+		top: 43%;
+		width: 100%;
+	}
+
+	.entrepreneur_quiz__start_btn {
+		background-color: #004C4C;
+		border: 6px solid #FFF;
+		color: #FFF;
+		padding: 12px 2px;
+		width: 52%;
+		max-width: 318px;
+		margin: 8px auto 0;
+		font-size: 32px;
+		font-weight: bold;
+	}
+
+	.entrepreneur_quiz__start_btn:hover {
+		cursor: pointer;
+		background-color: #007F7F;
+	}
+
+	.entrepreneur_quiz__slide {
+		border: none;
+		display: none;
+	}
+
+	.entrepreneur_quiz__infoboxes {
+		display: none;
+	}
+
+	.entrepreneur_quiz__options {
+		background-color: #DDDDDD;
+		padding: 8px;
+		display: block;
+		margin: 3px auto 0;
+		cursor: pointer;
+	}
+
+	.entrepreneur_quiz__option {
+		width: 1.5em;
+		clear: both;
+	}
+
+	.entrepreneur_quiz__options:hover, .entrepreneur_quiz__option--selected {
+		background-color: #007F7F;
+		color: #FFF;
+	}
+
+	.entrepreneur_quiz__question--number {
+		display: inline-block;
+		margin: 8px auto 8px 0;
+	}
+
+	.entrepreneur_quiz__btn--next {
+		display: none;
+		float: right;
+		background-color: #007F7F;
+		border: none;
+		color: #FFF;
+		padding: .5em;
+		cursor: pointer;
+		min-width: 50px;
+		min-height: 30px;
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.entrepreneur_quiz__btn--next:hover {
+		background:#064c4d
+	}
+
+	.entrepreneur_quiz__results, .entrepreneur_quiz__result--btns {
+		display: none;
+	}
+
+	.entrepreneur_quiz__restart_img--container {
+		position: relative;
+	}
+
+	.entrepreneur_quiz__restart_btn--container, .tempShareToolsHolder {
+		font-size: 18px;
+		font-weight: bold;
+		background-color: #007F7F;
+		color: #FFF;
+		max-width: 200px;
+		padding-top: 0;
+		height: 38px;
+		margin: 5px auto;
+
+		>img{
+			display: inline-block;
+			padding: 0 20px;
+			margin-top: 12px;
+			width: auto;
+		}
+	}
+
+	.entrepreneur_quiz__restart_btn--container:hover {
+		background-color:  #064c4d;
+	}
+
+	.entrepreneur_quiz__restart_btn {
+		cursor: pointer;
+	    text-align: center;
+	    margin: auto;
+	    margin-top: -22px;
+	}
+
+	.tempShareToolsHolder {
+		background-color: #69c023;
+		p {
+			margin: 6px auto;
+		}
+	}
+
+	.tempShareToolsHolder:hover {
+		background-color: #689c00;
+	}
+
+	@include respondMinMax(0, 400px){
+		.entrepreneur_quiz__start_btn--container {
+			position: static;
+		}
+
+		.entrepreneur_quiz__start_btn{
+			border: none;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+}
